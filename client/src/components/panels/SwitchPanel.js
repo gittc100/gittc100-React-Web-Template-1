@@ -718,7 +718,7 @@ const SwitchPanel = props => {
 				<BodyInt1 {...props}>
 					<PTag
 						ptag_config={{
-							title: '2 Way Switch (v2)',
+							title: '2 Way Switch (v4)',
 							color: props => props.theme.panel_text,
 							margin: '0px 0px 0px 0px',
 							font_weight: '600',
