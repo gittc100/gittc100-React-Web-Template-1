@@ -91,7 +91,7 @@ const ButtonPanel = props => {
 				<BodyInt1 {...props}>
 					<PTag
 						ptag_config={{
-							title: 'Oval Button',
+							title: 'Button (v1)',
 							color: props => props.theme.panel_text,
 							margin: '0px 0px 0px 0px',
 							font_weight: '600',
@@ -187,7 +187,7 @@ const ButtonPanel = props => {
 				<BodyInt1 {...props}>
 					<PTag
 						ptag_config={{
-							title: 'Rounded Button',
+							title: 'Button (v2)',
 							color: props => props.theme.panel_text,
 							margin: '0px 0px 0px 0px',
 							font_weight: '600',
@@ -283,7 +283,7 @@ const ButtonPanel = props => {
 				<BodyInt1 {...props}>
 					<PTag
 						ptag_config={{
-							title: 'Button',
+							title: 'Button (v3)',
 							color: props => props.theme.panel_text,
 							margin: '0px 0px 0px 0px',
 							font_weight: '600',
@@ -379,7 +379,7 @@ const ButtonPanel = props => {
 				<BodyInt1 {...props}>
 					<PTag
 						ptag_config={{
-							title: 'Round SVG Button',
+							title: 'SVG Button (v1)',
 							color: props => props.theme.panel_text,
 							margin: '0px 0px 0px 0px',
 							font_weight: '600',
@@ -447,7 +447,7 @@ const ButtonPanel = props => {
 				<BodyInt1 {...props}>
 					<PTag
 						ptag_config={{
-							title: 'Rounded SVG Button',
+							title: 'SVG Button (v2)',
 							color: props => props.theme.panel_text,
 							margin: '0px 0px 0px 0px',
 							font_weight: '600',
@@ -515,7 +515,7 @@ const ButtonPanel = props => {
 				<BodyInt1 {...props}>
 					<PTag
 						ptag_config={{
-							title: 'SVG Button',
+							title: 'SVG Button (v3)',
 							color: props => props.theme.panel_text,
 							margin: '0px 0px 0px 0px',
 							font_weight: '600',
@@ -581,7 +581,7 @@ const ButtonPanel = props => {
 				<BodyInt1 {...props}>
 					<PTag
 						ptag_config={{
-							title: 'Oval SVG&TEXT Button',
+							title: 'SVG&TEXT Button (v1)',
 							color: props => props.theme.panel_text,
 							margin: '0px 0px 0px 0px',
 							font_weight: '600',
@@ -671,7 +671,7 @@ const ButtonPanel = props => {
 				<BodyInt1 {...props}>
 					<PTag
 						ptag_config={{
-							title: 'Rounded SVG&TEXT Button',
+							title: 'SVG&TEXT Button (v2)',
 							color: props => props.theme.panel_text,
 							margin: '0px 0px 0px 0px',
 							font_weight: '600',
@@ -761,7 +761,7 @@ const ButtonPanel = props => {
 				<BodyInt1 {...props}>
 					<PTag
 						ptag_config={{
-							title: 'SVG&TEXT Button',
+							title: 'SVG&TEXT Button (v3)',
 							color: props => props.theme.panel_text,
 							margin: '0px 0px 0px 0px',
 							font_weight: '600',

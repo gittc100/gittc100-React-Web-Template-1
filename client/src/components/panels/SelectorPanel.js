@@ -90,7 +90,7 @@ const SelectorPanel = props => {
 				<BodyInt1 {...props}>
 					<PTag
 						ptag_config={{
-							title: 'Oval Selector',
+							title: 'Selector (v1)',
 							color: props => props.theme.panel_text,
 							margin: '0px 0px 0px 0px',
 							font_weight: '600',
@@ -160,7 +160,7 @@ const SelectorPanel = props => {
 				<BodyInt1 {...props}>
 					<PTag
 						ptag_config={{
-							title: 'Oval Selector',
+							title: 'Selector (v2)',
 							color: props => props.theme.panel_text,
 							margin: '0px 0px 0px 0px',
 							font_weight: '600',
@@ -230,7 +230,7 @@ const SelectorPanel = props => {
 				<BodyInt1 {...props}>
 					<PTag
 						ptag_config={{
-							title: 'Oval Selector',
+							title: 'Selector (v3)',
 							color: props => props.theme.panel_text,
 							margin: '0px 0px 0px 0px',
 							font_weight: '600',
