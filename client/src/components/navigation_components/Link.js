@@ -21,6 +21,7 @@ const NavLinkUpgrade = styled(NavLink)`
 	left: ${props => (props.hover ? '0px' : '0px')};
 	background-color: ${props => (props.hover ? props.theme.link_sub : 'transparent')};
 	border: 1px solid ${props => (props.hover ? props.theme.link_sub_border : 'transparent')};
+	box-shadow: ${props => (props.hover ? props.theme.link_box_sadow : 'none')};
 	border-radius: ${props => (props.hover ? '25px 25px 25px 25px' : '50%')};
 	text-decoration: ${props =>
 		props.link_config && props.link_config.text_decoration ? props.link_config.text_decoration : 'none'};
