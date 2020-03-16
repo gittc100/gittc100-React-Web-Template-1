@@ -56,7 +56,7 @@ const themes = {
 
 const GlobalState = props => {
 	const [styleState, dispatch] = useReducer(GlobalReducer, {
-		theme: window.localStorage.getItem("chif_manager_theme"),
+		theme: window.localStorage.getItem("chif_manager_theme") || 'light',
 	});
 
 	const toggleTheme = theme => {
