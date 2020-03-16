@@ -11,6 +11,8 @@ const Nav = styled.div`
 	height: 100vh;
 	background: ${props => props.theme.nav};
 	width: 60px;
+	box-shadow: ${props => props.theme.nav_box_sadow};
+	z-index: 3;
 `;
 
 const LinkCon = styled.div`
@@ -32,8 +34,6 @@ const DivTop = styled.div`
 	align-items: center;
 	width: 100%;
 	height: 90%;
-	// border: 1px solid red;
-	// overflow: scroll;
 `;
 const DivBottom = styled.div`
 	display: flex;
@@ -41,13 +41,10 @@ const DivBottom = styled.div`
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	// border: 1px solid blue;
 `;
 const MainNav = props => {
-
 	return (
-		<Nav>
-			
+		<Nav {...props}>
 			<DivTop>
 				<LinkCon>
 					<Link
@@ -57,7 +54,7 @@ const MainNav = props => {
 							type: 'home',
 							sub_type: 'nav_link',
 							title: 'Home',
-							padding: '10px'
+							padding: '10px',
 						}}
 					/>
 				</LinkCon>
@@ -69,7 +66,7 @@ const MainNav = props => {
 							type: 'main-components',
 							sub_type: 'nav_link',
 							title: 'Main Components',
-							padding: '10px'
+							padding: '10px',
 						}}
 					/>
 				</LinkCon>
@@ -83,7 +80,7 @@ const MainNav = props => {
 							type: 'settings',
 							sub_type: 'nav_link',
 							title: 'Settings',
-							padding: '10px'
+							padding: '10px',
 						}}
 					/>
 				</LinkCon>

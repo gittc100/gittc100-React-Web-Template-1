@@ -17,8 +17,9 @@ const UserSettingsPanel = props => {
 				min_width: '150px', 
 				height: '800px',
 				padding: '20px 20px 20px 20px',
-				margin: '10px 10px 10px 0px',
+				margin: '10px 0px 10px 10px',
 				border_radius: '10px 10px 10px 10px',
+				box_shadow: props => props.theme.panel_box_sadow,
 			}}
 		>
 			<HeaderTag

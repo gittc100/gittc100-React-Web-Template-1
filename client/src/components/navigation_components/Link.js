@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import SVG from '../general_components/Button';
+import SVG from '../general_components/SVG';
 import PTag from '../general_components/PTag';
 require('dotenv').config();
 
@@ -24,6 +24,7 @@ const NavLinkUpgrade = styled(NavLink)`
 	border-radius: ${props => (props.hover ? '25px 25px 25px 25px' : '50%')};
 	text-decoration: ${props =>
 		props.link_config && props.link_config.text_decoration ? props.link_config.text_decoration : 'none'};
+	transition: 0.05s;
 `;
 
 const Link = props => {
@@ -69,7 +70,16 @@ const Link = props => {
 		>
 			<SVG
 				{...props}
-				svg_config={{ width: '30px', height: '30px', hover, active, type: props.link_config.type }}
+				svg_config={{
+					width: '30px',
+					height: '30px',
+					color: hover
+						? props => props.theme.link_active
+						: active
+						? props => props.theme.link_hover
+						: props => props.theme.link_inactive,
+					type: props.link_config.type,
+				}}
 			/>
 			{linkExpand ? (
 				<PTag

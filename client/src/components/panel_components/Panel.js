@@ -11,7 +11,8 @@ const PANEL = styled.div`
 	align-items: ${props =>
 		props.panel_config && props.panel_config.align_items ? props.panel_config.align_items : null};
 	flex-wrap: ${props => (props.panel_config && props.panel_config.flex_wrap ? props.panel_config.flex_wrap : 'none')};
-	overflow-y: ${props => (props.panel_config && props.panel_config.overflow_y ? props.panel_config.overflow_y : 'none')};
+	overflow-y: ${props =>
+		props.panel_config && props.panel_config.overflow_y ? props.panel_config.overflow_y : 'none'};
 	height: ${props => (props.panel_config && props.panel_config.height ? props.panel_config.height : 'auto')};
 	width: ${props => (props.panel_config && props.panel_config.width ? props.panel_config.width : 'auto')};
 	min-width: ${props => (props.panel_config && props.panel_config.min_width ? props.panel_config.min_width : null)};
@@ -25,6 +26,9 @@ const PANEL = styled.div`
 		props.panel_config && props.panel_config.background_color
 			? props.panel_config.background_color
 			: props.theme.panel_base};
+	box-shadow: ${props =>
+		props.panel_config && props.panel_config.box_shadow ? props.panel_config.box_shadow : 'none'};
+	z-index: ${props => (props.panel_config && props.panel_config.z_index ? props.panel_config.z_index : '0')};
 `;
 const Panel = props => {
 	return <PANEL {...props} />;

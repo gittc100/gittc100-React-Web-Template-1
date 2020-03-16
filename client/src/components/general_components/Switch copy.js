@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useContext } from 'react';
 import styled from 'styled-components';
-import SVG from './SVG';
 import GlobalContext from '../../context/GlobalContext';
 require('dotenv').config();
 

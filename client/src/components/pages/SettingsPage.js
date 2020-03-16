@@ -4,21 +4,43 @@ import HeaderTag from '../general_components/HeaderTag';
 import AppSettingsPanel from '../panels/AppSettingsPanel';
 import UserSettingsPanel from '../panels/UserSettingsPanel';
 import TitlePanel from '../panels/TitlePanel';
-import SettingsBodyPanel from '../panels/SettingsBodyPanel';
+import Panel from '../panel_components/Panel';
+import ThemeToggle from '../theme_components/ThemeToggle';
 require('dotenv').config();
+
+const SettingsBodyPanel = props => {
+	return (
+		<Panel
+			{...props}
+			panel_config={{
+				display: 'flex',
+				justify_content: 'flex-start',
+				align_items: 'flex-start',
+				flex_direction: 'row',
+				flex_wrap: 'wrap',
+				width: '100%',
+				height: '100%',
+				padding: '0px 10px 0px 0px',
+				background_color: 'transparent',
+				overflow_y: 'auto',
+			}}
+		/>
+	);
+};
 
 const SettingsPage = props => {
 	return (
-		<Page {...props} page_config={{ padding: '10px 10px 10px 10px' }}>
+		<Page {...props} page_config={{ padding: '0px 0px 0px 0px' }}>
 			<TitlePanel>
 				<HeaderTag
 					header_config={{
 						type: 'h1',
 						text: `${props.site_name} > Settings`,
-						margin: '10px 0 10px 0px',
-						color: props => props.theme.page_text,
+						padding: '10px 10px 10px 10px',
+						color: props => props.theme.page_text
 					}}
 				/>
+				<ThemeToggle />
 			</TitlePanel>
 			<SettingsBodyPanel>
 				<UserSettingsPanel {...props} />
@@ -41,3 +63,27 @@ export default SettingsPage;
 					}}
 				></div> */
 }
+
+// display: 'flex',
+// justify_content: 'space-between',
+// align_items: 'flex-start',
+// flex_direction: 'row',
+// width: '100%',
+// padding: '0px 0px',
+// background_color: 'transparent',
+
+// display: 'grid',
+// grid_template_columns: 'auto auto',
+// grid_gap: '10px',
+// width: '100%',
+// height: '100%',
+// padding: '0px 0px',
+// background_color: 'transparent',
+// media: {
+// 	width1:{
+// 		width: '600px',
+// 		display: 'flex',
+// 		flex_direction: 'column',
+// 		overflow_y: 'scroll'
+// 	}
+// }

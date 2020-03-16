@@ -1,7 +1,6 @@
 export const TOGGLE_STYLE = 'TOGGLE_STYLE';
 
 const toggleTheme = (state, theme) => {
-  console.log("theme",theme);
   return { ...state, theme: theme };
 };
 

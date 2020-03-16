@@ -15,7 +15,6 @@ const PageMain = styled.div`
 	padding: ${props => (props.page_config && props.page_config.padding ? props.page_config.padding : '0 0 0 0')};
 	margin: ${props => (props.page_config && props.page_config.margin ? props.page_config.margin : '0 0 0 0')};
 	background-color: ${props => props.theme.page_base};
-
 `;
 const Page = props => {
 	return <PageMain {...props} />;
