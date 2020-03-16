@@ -19,7 +19,7 @@ const AppSettingsPanel = props => {
 				width: '100%',
 				max_width: '400px',
 				min_width: '150px',
-				height: '400px',
+				height: 'auto',
 				padding: '20px 20px 20px 20px',
 				margin: '10px 0px 10px 10px',
 				border_radius: '10px 10px 10px 10px',

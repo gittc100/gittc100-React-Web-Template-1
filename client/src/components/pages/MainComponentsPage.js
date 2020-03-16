@@ -1,12 +1,10 @@
 import React from 'react';
 import Page from '../page_components/Page';
 import Panel from '../panel_components/Panel';
-import HeaderTag from '../general_components/HeaderTag';
 import TitlePanel from '../panels/TitlePanel';
 import ButtonPanel from '../panels/ButtonPanel';
 import SelectorPanel from '../panels/SelectorPanel';
 import SwitchPanel from '../panels/SwitchPanel';
-import ThemeToggle from '../theme_components/ThemeToggle';
 require('dotenv').config();
 
 const MainComponentsBodyPanel = props => {
@@ -31,17 +29,7 @@ const MainComponentsBodyPanel = props => {
 const MainComponentsPage = props => {
 	return (
 		<Page {...props} page_config={{ padding: '0px 0px 0px 0px' }}>
-			<TitlePanel {...props}>
-				<HeaderTag
-					header_config={{
-						type: 'h1',
-						text: `${props.site_name} > Main Components`,
-						padding: '10px 10px 10px 10px',
-						color: props => props.theme.page_text,
-					}}
-				/>
-				<ThemeToggle />
-			</TitlePanel>
+			<TitlePanel {...props} title_panel_config={{ page: 'Main Components' }} />
 			<MainComponentsBodyPanel {...props}>
 				<ButtonPanel {...props} />
 				<SelectorPanel {...props} />

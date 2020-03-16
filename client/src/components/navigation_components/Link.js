@@ -59,6 +59,10 @@ const Link = props => {
 					setHover(true);
 					setLinkExpand(true);
 				}
+				if (event.which == 13) {
+					setHover(false);
+					setLinkExpand(false);
+				}
 			}}
 			onKeyDown={event => {
 				if (event.which == 9) {
@@ -66,6 +70,19 @@ const Link = props => {
 					setLinkExpand(false);
 				}
 			}}
+			/* onFocusOut={event => {
+				setHover(false);
+				setLinkExpand(false);
+			}}
+			onMouseOut={event => {
+				setHover(false);
+				setLinkExpand(false);
+			}}
+			onMouseMove={event => {
+				setHover(false);
+				setLinkExpand(false);
+			}} */
+			
 			hover={hover}
 		>
 			<SVG

@@ -1,11 +1,9 @@
 import React from 'react';
 import Page from '../page_components/Page';
-import HeaderTag from '../general_components/HeaderTag';
 import AppSettingsPanel from '../panels/AppSettingsPanel';
 import UserSettingsPanel from '../panels/UserSettingsPanel';
 import TitlePanel from '../panels/TitlePanel';
 import Panel from '../panel_components/Panel';
-import ThemeToggle from '../theme_components/ThemeToggle';
 require('dotenv').config();
 
 const SettingsBodyPanel = props => {
@@ -31,17 +29,7 @@ const SettingsBodyPanel = props => {
 const SettingsPage = props => {
 	return (
 		<Page {...props} page_config={{ padding: '0px 0px 0px 0px' }}>
-			<TitlePanel>
-				<HeaderTag
-					header_config={{
-						type: 'h1',
-						text: `${props.site_name} > Settings`,
-						padding: '10px 10px 10px 10px',
-						color: props => props.theme.page_text
-					}}
-				/>
-				<ThemeToggle />
-			</TitlePanel>
+			<TitlePanel {...props} title_panel_config={{ page: 'Settings' }} />
 			<SettingsBodyPanel>
 				<UserSettingsPanel {...props} />
 				<AppSettingsPanel {...props} />

@@ -11,7 +11,7 @@ const Controller = styled.div`
 	width: 100%;
 `;
 
-const site_name = 'APP NAME';
+const site_name = 'CHIF MANAGER';
 
 const PageController = props => {
 	return (

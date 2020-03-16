@@ -53,12 +53,12 @@ const ThemeToggle = props => {
 					callback: changeTheme,
 					width: 'auto',
 					height: 'auto',
-					slide_width: '45px',
+					slide_width: '40px',
 					slide_height: 20,
 					slide_type: 'circle',
 					btn_radius: '50%',
 					btn_dim: 20,
-					margin: '0 20px 0 0',
+					margin: '0 0px 0 0',
 				}}
 			/>
 		</Panel>
