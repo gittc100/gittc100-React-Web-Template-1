@@ -8,6 +8,7 @@ require('dotenv').config();
 const Main = styled.div`
 	display: flex;
 	justify-content: space-between;
+	position: relative;
 	min-height: 100vh;
 	min-width: 100vw;
 `;

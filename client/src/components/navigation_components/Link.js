@@ -25,7 +25,7 @@ const NavLinkUpgrade = styled(NavLink)`
 	border-radius: ${props => (props.hover ? '25px 25px 25px 25px' : '50%')};
 	text-decoration: ${props =>
 		props.link_config && props.link_config.text_decoration ? props.link_config.text_decoration : 'none'};
-	transition: 0.05s;
+	transition: 0.3s;
 `;
 
 const Link = props => {
@@ -33,6 +33,11 @@ const Link = props => {
 	const [active, setActive] = useState(false);
 	const [hover, setHover] = useState(false);
 	const { to, title } = props.link_config;
+	// useEffect(()=>{
+	// 	if(){
+
+	// 	}
+	// })
 	return (
 		<NavLinkUpgrade
 			{...props}
@@ -71,19 +76,6 @@ const Link = props => {
 					setLinkExpand(false);
 				}
 			}}
-			/* onFocusOut={event => {
-				setHover(false);
-				setLinkExpand(false);
-			}}
-			onMouseOut={event => {
-				setHover(false);
-				setLinkExpand(false);
-			}}
-			onMouseMove={event => {
-				setHover(false);
-				setLinkExpand(false);
-			}} */
-			
 			hover={hover}
 		>
 			<SVG

@@ -29,7 +29,16 @@ const PANEL = styled.div`
 	box-shadow: ${props =>
 		props.panel_config && props.panel_config.box_shadow ? props.panel_config.box_shadow : 'none'};
 	z-index: ${props => (props.panel_config && props.panel_config.z_index ? props.panel_config.z_index : '0')};
+	${props =>
+		props.panel_config && props.panel_config.media_diplay_none
+			? css`
+					@media ${props => props.panel_config.media_diplay_none} {
+						display: none;
+					}
+			  `
+			: null}
 `;
+
 const Panel = props => {
 	return <PANEL {...props} />;
 };

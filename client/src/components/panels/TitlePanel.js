@@ -18,10 +18,11 @@ const TitlePanel = props => {
 				background_color: 'transparent',
 				box_shadow: props => props.theme.title_panel_box_sadow,
 				z_index: 2,
+				media_diplay_none: '(max-width: 600px)',
 			}}
 		>
 			<HeaderTag
-			{...props}
+				{...props}
 				header_config={{
 					type: 'h1',
 					text: `${props.site_name} - ${props.title_panel_config.page}`,
